@@ -27,7 +27,8 @@ CREATE TABLE tecsucu (
 CREATE TABLE tecelement (
 	id INT NOT NULL IDENTITY(1,1),
 	tecnico INT NOT NULL,
-	element INT NOT NULL,	
+	element INT NOT NULL,
+	cantidad BIGINT NOT NULL,
 	PRIMARY KEY (id),
 	CONSTRAINT FK_tecnico2 FOREIGN KEY (tecnico) REFERENCES tecnicos(id),
 	CONSTRAINT FK_element FOREIGN KEY (element) REFERENCES element(id)
@@ -42,9 +43,11 @@ CREATE TABLE element (
 );
 
 INSERT INTO tecnicos VALUES ('Pepito Perez' ,'1098RAX' ,20000000 ,1);
+INSERT INTO tecnicos VALUES ('Juanito Alcachofa' ,'1098DAT' ,10000000 ,0);
 INSERT INTO element VALUES ('Elemento 1' ,'ELM001',100);
 INSERT INTO element VALUES ('Elemento 2' ,'ELM002',70);
 INSERT INTO element VALUES ('Elemento 3' ,'ELM003',100);
 INSERT INTO element VALUES ('Elemento 4' ,'ELM004',50);
 INSERT INTO element VALUES ('Elemento 5' ,'ELM005',50);
 INSERT INTO element VALUES ('Elemento 6' ,'ELM006',60);
+INSERT INTO tecelement VALUES (2 ,1 , 10);
