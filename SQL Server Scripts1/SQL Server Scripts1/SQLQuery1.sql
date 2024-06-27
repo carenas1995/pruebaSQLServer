@@ -1,0 +1,21 @@
+CREATE TABLE tecnicos (
+	id INT NOT NULL IDENTITY(1,1),
+	nombre VARCHAR(50) NOT NULL,
+	codigo VARCHAR(50) NOT NULL,
+	sueldo BIGINT NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE sucursales (
+	id INT NOT NULL IDENTITY(1,1),
+	nombre VARCHAR(50) NOT NULL,
+	codigo VARCHAR(50) NOT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE element (
+	id INT NOT NULL IDENTITY(1,1),
+	nombre VARCHAR(50) NOT NULL,
+	codigo VARCHAR(50) NOT NULL,
+	PRIMARY KEY (id)
+);
