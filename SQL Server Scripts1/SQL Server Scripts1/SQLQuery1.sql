@@ -51,3 +51,5 @@ INSERT INTO element VALUES ('Elemento 4' ,'ELM004',50);
 INSERT INTO element VALUES ('Elemento 5' ,'ELM005',50);
 INSERT INTO element VALUES ('Elemento 6' ,'ELM006',60);
 INSERT INTO tecelement VALUES (2 ,1 , 10);
+INSERT INTO sucursales VALUES ('Principal','PRIN001');
+INSERT INTO tecsucu VALUES (2 ,1);
